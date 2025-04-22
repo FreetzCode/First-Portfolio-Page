@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gengnagel Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/icon.png">
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <header>
+      <div class="container">
+        <h1><a href="#home">My Portfolio</a></h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <label class="theme-switch">
+                <input type="checkbox" onchange="document.documentElement.setAttribute('data-theme', this.checked ? 'dark' : 'light')">
+                <span class="slider"></span>
+              </label>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HOME AREA (MAIN PAGE) -->
+    <section id="home">
+      <div class="container">
+        <div class="home-content">
+          <div class="text-content">
+            <h2>Hello, I'm </h2>
+            <h3>Passionate Student Coder</h3>
+            <a href="#projects" class="btn">View My Projects</a>
+            <a href="#contact" class="btn">Contact Me</a>
+          </div>
+          <div class="profile-image">
+            <img src="img/IMG_1675111.JPG" alt="image of fritz" />
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <div class="bounce-wrapper">
+          <a href="#about" class="v-arrow"></a>
+        </div>
+      </div>      
+    </section>
+
+    <!-- ABOUT AREA (Skills, Education, Introduction) -->
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me
+          <div class="section-divider"></div>
+        </h2>
+        <div class="about-content">
+          <div class="profile-image">
+            <img
+              src="img/294559091_4694532740648803_6884430562050203830_n.jpg"
+              alt="image of fritz"
+            />
+          </div>
+          <div class="about-text">
+            <h3>Who I Am</h3>
+            <p>
+              Hi, I'm Fritz Gengnagel! I'm a passionate student developer with a
+              love for coding, problem-solving, and creating innovative
+              projects. I enjoy working with C++ and other programming
+              languages, constantly expanding my skills to build engaging and
+              efficient applications. My journey in technology is driven by
+              curiosity, creativity, and a commitment to learning. Check out my
+              projects, and feel free to connect with me!
+            </p>
+            <h3>My Skills</h3>
+          <ul class="skills-list">
+            <li>HTML <div class="skill-level intermediate"></div></li>
+            <li>CSS <div class="skill-level intermediate"></div></li>
+            <li>C++ <div class="skill-level intermediate"></div></li>
+            <li>Python <div class="skill-level beginner"></div></li>
+          </ul>
+          <h3>Education</h3>
+          <div class="education">
+            <div class="education-item">
+              <h4>Science, Technology, Engineering, and Mathematics Graduate</h4>
+              <p>2018 - 2020</p>
+            </div>
+            <div class="education-item">
+              <h4>Information Technology Degree</h4>
+              <p>2024 - 2028</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT SECTION (Use grid or Flex) -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects
+        <div class="section-divider"></div>
+        </h2>
+        <div class="projects-wrapper">
+            <input
+            type="radio"
+            id="projects-tab"
+            name="tabs"
+            checked
+            class="tab-input"
+            />
+            <label for="projects-tab" class="project-tab" active>Projects</label>
+            <input 
+            type="radio" 
+            id="websites-tab" 
+            name="tabs" 
+            class="tab-input" 
+            />
+            <label for="websites-tab" class="project-tab">Websites</label>
+          <div class="projects-container">
+            <div id="projects-content" class="projects-grid">
+                <div class="project">
+                    <div class="project-image">
+                        <img
+                          src="img/rps game.png"
+                          alt="Rock Paper Scissor RPG Game image"
+                        />
+                      </div>
+                      <h3>Rock Paper Scissor RPG Game</h3>
+                      <p>
+                        A C++ console-based game that combines the classic Rock-Paper-Scissors
+                        mechanics with RPG-style battles.
+                      </p>
+                      <a href="https://github.com/FreetzCode/first-rps-game" target="_blank"
+                        >View Project</a
+                      >
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img
+                          src="img/dungeon.png"
+                          alt="Rock Paper Scissor RPG Game image"
+                        />
+                      </div>
+                      <h3>Random Chest Dungeon Game</h3>
+                      <p>
+                        A random chest dungeon game that uses randomized outcomes to
+                        determine your health and mana potion storage.
+                      </p>
+                      <a href="https://github.com/FreetzCode/Random-Chest-Dungeon-Game" target="_blank"
+                        >View Project</a
+                      >
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img
+                          src="img/cat.png"
+                          alt="Rock Paper Scissor RPG Game image"
+                        />
+                      </div>
+                      <h3>Cat Feeding Game</h3>
+                      <p>
+                        A cute c++ game that lets you buy cat food with randomized outputs
+                        to pet your loving cat.
+                      </p>
+                      <a href="https://github.com/FreetzCode/Cat-Feeding-Game" target="_blank"
+                        >View Project</a
+                      >
+                </div>
+            </div>
+            <!-- WEBSITE GRID -->
+            <div id="websites-content" class="projects-grid">
+              <div class="project">
+                <div class="project-image">
+                  <img
+                    src="img/portfolio.png"
+                    alt="My Portfolio Picture"
+                  />
+                </div>
+                <h3>Personal Portfolio</h3>
+                <p>
+                  A clean and responsive portfolio website built with HTML and CSS,
+                  featuring smooth animations and modern design.
+                </p>
+                <a href="#" target="_blank">View Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me
+        <div class="section-divider"></div>
+        </h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Email</h3>
+                <p><a target="_blank" href="mailto:fritz.gengnagel@hotmail.com">fritz.gengnagel@hotmail.com</a></p>
+                <h3>Phone</h3>
+                <p>+63 976 507 8201</p>
+                <h3>Location</h3>
+                <p>Dasmarinas, Cavite</p>
+              </div>
+      
+              <div class="contact-form">
+                <form>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+      
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+      
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                  <button type="submit" class="btn">Send Message</button>
+                </form>
+              </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Fritz Gengnagel. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
